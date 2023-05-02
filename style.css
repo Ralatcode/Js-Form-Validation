@@ -18,6 +18,7 @@ form {
 
 .input-wrapper > * {
     display: block;
+    transition: all ease-out 200ms;
 }
 
 input {
@@ -28,6 +29,21 @@ input {
     border-radius: 5px;
 }
 
+input.valid {
+    border-color: #36cc36;
+}
+
+input.invalid {
+    border-color: orange;
+}
+
 span {
     margin-top: .5em;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + span {
+    opacity: 1;
+    height: auto;
 }
