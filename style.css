@@ -27,6 +27,7 @@ input {
     padding: .8em;
     border: 2px solid rgba(32, 28, 28, 0.671);
     border-radius: 5px;
+    outline: none;
 }
 
 input.valid {
